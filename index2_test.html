@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VG24/7</title>
+        <link rel="stylesheet" href="css/vg247_css.css">
+        <script src="js/vg247_java.js"></script>
+
+        <!-- Load an icon library (Font Awesome) to show the hamburger menu icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+        <link rel="stylesheet" href="css/carousel.css">
+
+        <!--flexslider-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/carousel_js.js"></script>
+        <script>
+            (function() {
+            
+            
+            var $window = $(window),
+                flexslider = { vars:{} };
+            
+            
+            function getGridSize() {
+                return (window.innerWidth < 600) ? 2 :
+                    (window.innerWidth < 900) ? 3 : 4;
+            }
+            
+            $(function() {
+                SyntaxHighlighter.all();
+            });
+            
+            $window.load(function() {
+                $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                itemWidth: 210,
+                itemMargin: 5,
+                minItems: getGridSize(), 
+                maxItems: getGridSize() 
+                });
+            });
+            
+            
+            $window.resize(function() {
+                var gridSize = getGridSize();
+            
+                flexslider.vars.minItems = gridSize;
+                flexslider.vars.maxItems = gridSize;
+            });
+            }());
+        </script>
+
+    </head>
+
+    <body class="body">
+
+        <!--Header Banner-->
+        <header class="header">
+            <div class="header_content">
+                <div class="title">
+                    <h1>VG247</h1>
+                </div>
+
+                <!-- Hamburger menu icon -->
+                <div class="icon">
+                    <a href="javascript:void(0);" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- Navigation links (hidden by default) -->
+                <nav class="main_nav" id="myLinks">
+                    <ul class="main_nav_text">
+                        <li><a href="placeholder.html">News</a></li>
+                        <li><a href="placeholder.html">Reviews</a></li>
+                        <li><a href="placeholder.html">Articles</a></li>
+                        <li><a href="placeholder.html">Guides</a></li>
+                    </ul>
+
+                    <ul class="secondary_nav">
+                        <li><a href="placeholder.html">World of Warcraft</a></li>
+                        <li><a href="placeholder.html">Diablo 4</a></li>
+                        <li><a href="placeholder.html">Starfield</a></li>
+                        <li><a href="placeholder.html">Control</a></li>
+                    </ul>
+                    
+                    <div class="button_group">
+                        <div class="user_signed_out">
+                            <a class="sign_in_button" href="placeholder.html">Sign in / Create account</a>
+                        </div>
+                        <div class="support_buttons">
+                            <div class="support">
+                                <a class="support_us" href="placeholder.html">Support Us</a>
+                            </div>
+                            <div class="merch">
+                                <a class="merch_button" href="placeholder.html">Buy our merch</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>  
+            </div> 
+        </header>
+
+        <!--Main Content-->
+        <main class="main_content">
+            <div class="page_container">
+
+                <!--Small Nav-->
+                <div class="small_nav_container">
+                    <nav class="small_nav">
+                        <ul class="small_nav_text">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="placeholder.html">Recommended for You</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--Primary Content-->
+                <div class="primary_content">
+                    <!--Primary Content #1-->
+                    <ul class="content_list_no_margin">
+                        <li><a href="bg3_difficulty.html">
+                            <img class="primary_image" src="images/baldurs_gate_3.jpg" alt="Baldur's Gate 3 Hero Poster Image">
+                            <p class="primary_headline">Brace Yourself, Baldur's Gate 3 might be getting a new difficulty mode</p>
+                            <p class="primary_tag" id="primary_tag1">Tougher than tactician. The stuff nightmares are made of.</p>
+                        </a></li>
+                    </ul>   
+
+                    <!--Primary Content #2-->
+                    <ul class="content_list">
+                        <li><a href="mario_wonder.html">
+                            <img class="primary_image" src="images/super_mario_wonder.webp" alt="Super Mario Wonder Picture of Mario and Luigi">
+                            <p class="primary_headline">Super Mario Wonder Review</p>
+                            <p class="primary_tag" id="primary_tag2">2d Mario back to his best.</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Primary Content #3-->
+                    <ul class="content_list_bottom">
+                        <li><a href="horizon_lamp_detail.html">
+                            <img class="primary_image" src="images/horizon_west_hero_image.avif" alt="Horizon Forbidden West Hero Picture of Aloy">
+                            <p class="primary_headline">Horizon Forbidden West</p>
+                            <p class="primary_tag" id="primary_tag2">Player shows off incredible lamp detail.</p>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!--Secondary Content-->
+                <div class="secondary_content">
+                    <!--Secondary Content #1-->
+                    <ul class="content_list_no_margin">
+                        <li><a href="alan_wake2_requirements.html">
+                            <img class="secondary_image" src="images/alan_wake_2.webp" alt="A close up portrait picture of Alan Wake">
+                            <p class="secondary_headline">Alan Wake II PC requirements are insane!</p>
+                            <p class="secondary_tag" id="secondary_tag1">You'll need a beast of a machine for this one!</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Secondary Content #2-->
+                    <ul class="content_list">
+                        <li><a href="diablo_IV.html">
+                            <img class="secondary_image" src="images/diablo_4_vessel_of_hatred.webp" alt="Diablo IV Vessel of Hatred Poster">
+                            <p class="secondary_headline">Diablo IV: First Expansion</p>
+                            <p class="secondary_tag" id="secondary_tag2">Vessel of Hatred</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Secondary Content #3-->
+                     <ul class="content_list">
+                        <li><a href="placeholder.html">
+                            <img class="secondary_image" src="images/elden_ring.webp" alt="Picture of the Elden Beast. The final boss in the game Elden Ring">
+                            <p class="secondary_headline">Elden Ring</p>
+                            <p class="secondary_tag" id="secondary_tag3">Player reveals the insane amount of players they have help defeat the final boss</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Secondary Content #4-->
+                    <ul class="content_list_bottom">
+                        <li><a href="placeholder.html">
+                            <img class="secondary_image" src="images/elden_ring.webp" alt="Picture of the Elden Beast. The final boss in the game Elden Ring">
+                            <p class="secondary_headline">Elden Ring</p>
+                            <p class="secondary_tag" id="secondary_tag4">Player reveals the insane amount of players they have help defeat the final boss</p>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!--Teriary Content-->
+                <div class="tertiary_content">
+                    <!--Teriary Content #1-->
+                    <ul class="tertiary_content_list_no_margin" id="tertiary_content1">
+                        <li><a href="placeholder.html">
+                            <p class="tertiary_headline">WOW</p>
+                            <p class="tertiary_tag" id="tertiary_tag1">We take a look at Dragonflight's next update 10.2. It's getting dreamy.</p>
+                        </a></li>
+                    </ul>
+                    
+                    <!--Teriary Content #2-->
+                    <ul class="tertiary_content_list" id="tertiary_content2">
+                        <li><a href="placeholder.html">
+                            <p class="tertiary_headline">XBOX Game Pass</p>
+                            <p class="tertiary_tag" id="tertiary_tag2">What is James Bond and Superman had a baby?</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Teriary Content #3-->
+                    <ul class="tertiary_content_list" id="tertiary_content3">
+                        <li><a href="placeholder.html">
+                            <p class="tertiary_headline">Final Fantasy VII Rebirth</p>
+                            <p class="tertiary_tag" id="tertiary_tag3">Could Be Setting Up A Wild Zack Twist</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Teriary Content #4-->
+                    <ul class="tertiary_content_list" id="tertiary_content4">
+                        <li><a href="placeholder.html">
+                            <p class="tertiary_headline">Final Fantasy VII Rebirth</p>
+                            <p class="tertiary_tag" id="tertiary_tag3">Could Be Setting Up A Wild Zack Twist</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Teriary Content #5-->
+                    <ul class="tertiary_content_list" id="tertiary_content5">
+                        <li><a href="placeholder.html">
+                            <p class="tertiary_headline">Final Fantasy VII Rebirth</p>
+                            <p class="tertiary_tag" id="tertiary_tag3">Could Be Setting Up A Wild Zack Twist</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Teriary Content #6-->
+                    <ul class="tertiary_content_list" id="tertiary_content6">
+                        <li><a href="placeholder.html">
+                            <p class="tertiary_headline">Final Fantasy VII Rebirth</p>
+                            <p class="tertiary_tag" id="tertiary_tag3">Could Be Setting Up A Wild Zack Twist</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Teriary Content #6=7-->
+                    <ul class="tertiary_content_list" id="tertiary_content7">
+                        <li><a href="placeholder.html">
+                            <p class="tertiary_headline">Final Fantasy VII Rebirth</p>
+                            <p class="tertiary_tag" id="tertiary_tag3">Could Be Setting Up A Wild Zack Twist</p>
+                        </a></li>
+                    </ul>
+
+                    <!--Teriary Content #8-->
+                    <ul class="tertiary_content_list_bottom" id="tertiary_content8">
+                        <li><a href="placeholder.html">
+                            <p class="tertiary_headline">Final Fantasy VII Rebirth</p>
+                            <p class="tertiary_tag" id="tertiary_tag3">Could Be Setting Up A Wild Zack Twist</p>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!--Second Section - Latest Articles-->
+                <div class="second_section">
+                    <div class="latest_articles_wrapper">
+                        <h2 class="latest_articles_header">Latest Articles</h2>
+                    </div>
+
+                    <div class="second_section_wrapper">
+
+                        <!--Second Section #1-->
+                        <div class="second_section_content" id="second_section_content1">    
+                            <div>
+                            <a href="placeholder.html">    
+                                <img class="second_section_image" src="images/spiderman2.avif" alt="An hero poster image of Spiderman 2">
+                            </div>
+                            <div class="second_section_captions">
+                                <p class="second_section_headline">Marvel's Spiderman 2 cube glitch cannot be contained</p>
+                                <p class="second_section_tag">Long live the cube!</p>
+                            </a>    
+                            </div>
+                        </div>
+
+                        <!--Second Section #2-->
+                        <div class="second_section_content" id="second_section_content2">
+                            <div>
+                            <a href="placeholder.html">   
+                                <img class="second_section_image" src="images/starfield.avif" alt="A picture of Starfield gameplay mid-combat">
+                            </div>
+                            <div class="second_section_captions">
+                                <p class="second_section_headline">Starfield Ghosted for 2023 Game Awards</p>
+                                <p class="second_section_tag">The nominees have been announced for the Geoff Keighley's 2023 Game Awards and Starfield has been ghosted, only scoring one nomination.</p>
+                            </a>
+                            </div>
+                        </div>
+
+                        <!--Second Section #3-->
+                        <div class="second_section_content" id="second_section_content3">
+                            <div>
+                            <a href="placeholder.html">   
+                                <img class="second_section_image" src="images/baldurs_gate_3_astarion.webp" alt="A picture of Astarion from Baldur's Gate 3">
+                            </div>
+                            <div class="second_section_captions">
+                                <p class="second_section_headline">All the Geoff Keighley's 2023 Game Awards Nominees</p>
+                                <p class="second_section_tag">Baldur's Gate 3 and Alan Wake 2 lead the pack with 8 nominations each.</p>
+                            </a>
+                            </div>
+                        </div>
+
+                        <!--Second Section #4-->
+                        <div class="second_section_content" id="second_section_content4">
+                            <div>
+                            <a href="placeholder.html">   
+                                <img class="second_section_image" src="images/baldurs_gate_3_astarion.webp" alt="A picture of Astarion from Baldur's Gate 3">
+                            </div>
+                            <div class="second_section_captions">
+                                <p class="second_section_headline">All the Geoff Keighley's 2023 Game Awards Nominees</p>
+                                <p class="second_section_tag">Baldur's Gate 3 and Alan Wake 2 lead the pack with 8 nominations each.</p>
+                            </a>
+                            </div>
+                        </div>
+
+                        <!--Second Section #5-->
+                        <div class="second_section_content" id="second_section_content5">
+                            <div>
+                            <a href="placeholder.html">   
+                                <img class="second_section_image" src="images/baldurs_gate_3_astarion.webp" alt="A picture of Astarion from Baldur's Gate 3">
+                            </div>
+                            <div class="second_section_captions">
+                                <p class="second_section_headline">All the Geoff Keighley's 2023 Game Awards Nominees</p>
+                                <p class="second_section_tag">Baldur's Gate 3 and Alan Wake 2 lead the pack with 8 nominations each.</p>
+                            </a>
+                            </div>
+                        </div>
+
+                    </div>                 
+                </div>
+
+            </div>
+        </main>   
+
+        <!--Carousel-->
+        <div class="carousel_div" id="new_arrivals1">
+			<div class="carousel_title">
+				<h2 class="carousel_h2">Our Team</h2>
+			</div>
+			<div class="flexslider">
+				<ul class="slides">
+					<li><a href="placeholder.html"><img class="author_pic" src="images/dom.webp" alt="Dom Peppiatt"></a></li>
+					<li><a href="placeholder.html"><img class="author_pic" src="images/alex.webp" alt="Alex Donaldson"></a><li>
+					<li><a href="placeholder.html"><img class="author_pic" src="images/stephany.webp" alt="Stephany Nunneley-Jackson"></a></li>
+					<li><a href="placeholder.html"><img class="author_pic" src="images/mark.webp" alt="Mark"></a></li>
+					<li><a href="placeholder.html"><img class="author_pic" src="images/connor.webp" alt="Connor"></a></li>
+					<li><a href="placeholder.html"><img class="author_pic" src="images/james.webp" alt="James"></a></li>
+					<li><a href="placeholder.html"><img class="author_pic" src="images/kelsey.webp" alt="Kelsey"></a></li>
+					<li><a href="placeholder.html"><img class="author_pic" src="images/rebecca.webp" alt="Rebecca"></a></li>
+				</ul>
+			</div>
+		</div>
+        
+        <!--FOOTER-->
+        <footer>
+            <!--Main Footer and Copyright-->
+            <div class="main_footer_content">
+                <img class="footer_logo" src="images/vg247_logo.png">
+                <p class="main_footer_text">VG247 is owned by Gamer Network Limited, a ReedPop company and subsidiary of Reed Exhibitions Limited</p>
+                <p class="main_footer_text">Copyright &copy; 2023 Gamer Network Limited</p>
+            </div>
+            
+            <!--Footer Nav Links-->
+            <div class="secondary_footer_content">
+                <nav class="primary_footer_nav">
+                    <span class="label">Explore</span>
+                    <ul>
+                        <li><a href="placeholder">News</a></li>
+                        <li><a href="placeholder">Reviews</a></li>
+                        <li><a href="placeholder">Articles</a></li>
+                        <li><a href="placeholder">Guides</a></li>
+                        <li><a href="placeholder">Newsletters</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="secondary_footer_nav">
+                    <span class="label">Popular Now</span>
+                    <ul>
+                        <li><a href="placeholder">Baldur's Gate 3</a></li>
+                        <li><a href="placeholder">Alan Wake 2</a></li>
+                        <li><a href="placeholder">Call of Duty</a></li>
+                        <li><a href="placeholder">Diablo IV</a></li>
+                        <li><a href="placeholder">Spiderman 2</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="tertiary_footer_nav">
+                    <span class="label">Helpful Links</span>
+                    <ul>
+                        <li><a href="placeholder">About Us</a></li>
+                        <li><a href="placeholder">Advertise With Us</a></li>
+                        <li><a href="placeholder">Archive</a></li>
+                        <li><a href="placeholder">Authors</a></li>
+                        <li><a href="placeholder">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="quarternary_footer_nav">
+                    <span class="label">Reed Pop</span>
+                    <ul>
+                        <li><a href="placeholder">Digital Foundry</a></li>
+                        <li><a href="placeholder">Eurogamer</a></li>
+                        <li><a href="placeholder">Push Square</a></li>
+                        <li><a href="placeholder">Nintendo Life</a></li>
+                        <li><a href="placeholder">Pure Xbox</a></li>
+                    </ul>
+                </nav>
+                    
+            </div>
+        </footer>
+    </body>
+</html>
