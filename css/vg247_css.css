@@ -196,7 +196,7 @@ h1 {
 ======================*/
 
 /*Header Banner Area Styling*/
-h1 {
+.title_link {
     color: #ffffff;
 }
 
@@ -282,7 +282,7 @@ ul {
     list-style-type: none;
 }
 
-.main_nav ul a, .secondary_nav ul a, .sign_in_button, .support_us, .merch_button, .second_section_content a {
+.main_nav ul a, .secondary_nav ul a, .sign_in_button, .support_us, .merch_button, .second_section_content a, .title_link {
     text-decoration: none;
 }
 
@@ -527,18 +527,6 @@ footer {
     .title {
         grid-column: 2;
     }
-
-    /*.main_nav {
-        grid-column: 3;
-    }*/
-
-    /*.secondary_nav {
-        grid-column: 4;
-    }
-
-    .button_group {
-        grid-column: 5;
-    }*/
 
     /*HEADER - Margins, Padding and Borders*/
     .main_nav_text {
