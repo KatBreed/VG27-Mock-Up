@@ -767,6 +767,12 @@ footer {
 
 .video_iframe_wrapper {
     text-align: center;
+    
+}
+
+.diablo_trailer {
+    height: 15em;
+    width: 27em;
 }
 
 /*Article Page - Styling*/
@@ -781,8 +787,6 @@ footer {
 .article_image:hover {
     cursor: zoom-in;
 }
-
-    
 
 .article_author_pic {
     height: 5em;
@@ -822,6 +826,10 @@ footer {
 .author_credit_text {
     margin-left: 1.5em;
     margin-top: 1em;
+}
+
+.article_author_pic {
+    margin-left: 1.5em;
 }
 
 .article_text  {
@@ -897,9 +905,19 @@ footer {
         margin-right: 8em;
     }
     
-    .article_text_no_border, .requirements_list {
+    .article_text_no_border {
         margin-left: 8em;
         margin-right: 8em;
+    }
+
+    .requirements_list {
+        margin-left: 8em;
+        margin-right: 8em;
+    }
+
+    .diablo_trailer {
+        height: 24em;
+        width: 43.5em;
     }
 }
 
