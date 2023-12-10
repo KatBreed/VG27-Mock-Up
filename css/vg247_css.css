@@ -968,3 +968,71 @@ footer {
         margin-top: 2em;
     }
 }
+
+/*======================================
+        SUPPORT PAGES
+=======================================*/
+.plan_content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+.currency_select {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.section_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    color: #c00c0c;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*SUPPORT PAGE - Margins, Padding and Borders*/
+.section_title {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.select_plan_wrapper {
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 1em;
+}
+.yearly_plan, .monthly_plan {
+    border: 2px solid #c00c0c;
+    border-radius: 10%;
+}
+
+/*====================================================
+        RESPONSIVE DESIGN - Support Page
+=====================================================*/
+
+/*--- FULL SCREEN ---*/
+@media screen and (min-width: 72rem) {
+    .section_title {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        margin-left: 5.2em;
+    }
+
+    .select_plan_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section_title_wrapper {
+        grid-column: 2;
+    }
+
+    .yearly_plan, .monthly_plan {
+        padding: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
