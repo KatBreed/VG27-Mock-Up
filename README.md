@@ -1,0 +1,1 @@
+This is an atempt at a mock-up of the real website VG24/7. It is currently incomplete but the homepage and a few other things are complete.
